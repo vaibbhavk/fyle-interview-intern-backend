@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:7755"
+    environment:
+      FLASK_ENV: development
+      FLASK_APP: core/server.py
+    volumes:
+      - .:/app
